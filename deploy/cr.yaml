@@ -1,0 +1,4 @@
+apiVersion: "launcher.fabric8.io/v1alpha1"
+kind: "App"
+metadata:
+  name: "example"

@@ -1,0 +1,3 @@
+apiVersion: launcher.fabric8.io/v1alpha1
+kind: App
+projectName: launcher-creator-backend
