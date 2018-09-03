@@ -2,3 +2,25 @@ apiVersion: "launcher.fabric8.io/v1alpha1"
 kind: "App"
 metadata:
   name: "example"
+deployment:
+  source:
+      provider: github
+      owner: gastaldi
+      repository: test-123
+  runtime:
+      name: vert.x
+      version: 3.5.3
+  capabilities:
+      - kind: messaging
+        properties:
+          destinationType: queue
+          destinationName: foo
+      - kind: database
+        provision: true
+        properties:
+          name: PostgreSQL
+          version: 9.6.10
+      - kind: cache
+        provision: false
+        properties:
+          cacheName: my-cache

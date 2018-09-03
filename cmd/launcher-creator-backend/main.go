@@ -5,13 +5,12 @@ import (
 	"runtime"
 	"time"
 
-	stub "github.com/fabric8-launcher/launcher-creator-backend/pkg/stub"
-	sdk "github.com/operator-framework/operator-sdk/pkg/sdk"
-	k8sutil "github.com/operator-framework/operator-sdk/pkg/util/k8sutil"
+	"github.com/fabric8-launcher/launcher-creator-backend/pkg/stub"
+	"github.com/operator-framework/operator-sdk/pkg/sdk"
+	"github.com/operator-framework/operator-sdk/pkg/util/k8sutil"
 	sdkVersion "github.com/operator-framework/operator-sdk/version"
 
 	"github.com/sirupsen/logrus"
-	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 )
 
 func printVersion() {
